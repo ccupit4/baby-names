@@ -40,6 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="baby_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="baby_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="baby_files/libs/bootstrap/bootstrap-9f8a39c4cc452611d65c1e48be0278ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
 <link href="baby_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <script src="baby_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="baby_files/libs/plotly-binding-4.12.1/plotly.js"></script>
@@ -63,13 +64,11 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Navigation</h2>
    
   <ul>
-  <li><a href="#female-vs.-male-breakdown" id="toc-female-vs.-male-breakdown" class="nav-link active" data-scroll-target="#female-vs.-male-breakdown">Female vs.&nbsp;Male Breakdown</a></li>
-  <li><a href="#historical-records-explorer" id="toc-historical-records-explorer" class="nav-link" data-scroll-target="#historical-records-explorer">Historical Records Explorer</a></li>
-  <li><a href="#births-of-celise-over-time-line-chart" id="toc-births-of-celise-over-time-line-chart" class="nav-link" data-scroll-target="#births-of-celise-over-time-line-chart">Births of “Celise” Over Time (Line Chart)</a></li>
-  <li><a href="#population-pyramid-for-celise" id="toc-population-pyramid-for-celise" class="nav-link" data-scroll-target="#population-pyramid-for-celise">Population Pyramid for “Celise”</a></li>
+  <li><a href="#visual-demographics" id="toc-visual-demographics" class="nav-link active" data-scroll-target="#visual-demographics">Visual Demographics</a></li>
+  <li><a href="#historical-records-explorer" id="toc-historical-records-explorer" class="nav-link" data-scroll-target="#historical-records-explorer">🔍 Historical Records Explorer</a></li>
   <li><a href="#name-detective-the-celise-quiz" id="toc-name-detective-the-celise-quiz" class="nav-link" data-scroll-target="#name-detective-the-celise-quiz">🎮 Name Detective: The Celise Quiz</a></li>
   </ul>
 </nav>
@@ -79,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Story of the Name Celise</h1>
-<p class="subtitle lead">An Interactive Exploration of U.S. Baby Names</p>
+<p class="subtitle lead">An Interactive Exploration of U.S. Social Security Baby Names</p>
 </div>
 
 
@@ -96,44 +95,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="female-vs.-male-breakdown" class="level2">
-<h2 class="anchored" data-anchor-id="female-vs.-male-breakdown">Female vs.&nbsp;Male Breakdown</h2>
+<div class="grid" style="margin-top: 1.5rem; margin-bottom: 2rem; text-align: center;">
+<div class="g-col-12 g-col-sm-6 g-col-md-3">
+<div class="card p-3 bg-light border-0 shadow-sm">
+<h2 style="color: #2c3e50; font-weight: bold; margin: 0;" class="anchored">
+207
+</h2>
+<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Total Recorded</span></p>
+</div>
+</div>
+<div class="g-col-12 g-col-sm-6 g-col-md-3">
+<div class="card p-3 bg-light border-0 shadow-sm">
+<h2 style="color: #18bc9c; font-weight: bold; margin: 0;" class="anchored">
+1962
+</h2>
+<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Debut Year</span></p>
+</div>
+</div>
+<div class="g-col-12 g-col-sm-6 g-col-md-3">
+<div class="card p-3 bg-light border-0 shadow-sm">
+<h2 style="color: #3498db; font-weight: bold; margin: 0;" class="anchored">
+11
+</h2>
+<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Peak Annual Births</span></p>
+</div>
+</div>
+<div class="g-col-12 g-col-sm-6 g-col-md-3">
+<div class="card p-3 bg-light border-0 shadow-sm">
+<h2 style="color: #e74c3c; font-weight: bold; margin: 0;" class="anchored">
+100%
+</h2>
+<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Female</span></p>
+</div>
+</div>
+</div>
+<section id="visual-demographics" class="level2">
+<h2 class="anchored" data-anchor-id="visual-demographics">Visual Demographics</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">📈 Timeline (1962–2025)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🏛️ Population Pyramid</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-2fb30595163fa3a33208" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-2fb30595163fa3a33208">{"x":{"data":[{"orientation":"v","width":0.39999999999999991,"base":0,"x":[1],"y":[100],"text":"sex_label: Female<br />percentage: 100<br />sex_label: Female","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(228,26,28,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.40000000000000013,"base":0,"x":[2],"y":[0],"text":"sex_label: Male<br />percentage:   0<br />sex_label: Male","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(55,126,184,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Male","legendgroup":"Male","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":48.949771689497723},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Percentage of Babies Named Celise by Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,2.6000000000000001],"tickmode":"array","ticktext":["Female","Male"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["Female","Male"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-5,105],"tickmode":"array","ticktext":["0%","25%","50%","75%","100%"],"tickvals":[0,24.999999999999996,50,75,100],"categoryorder":"array","categoryarray":["0%","25%","50%","75%","100%"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Percentage","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"d5516457e966":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"d5516457e966","visdat":{"d5516457e966":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-3d7663f9ce07c9a00181" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3d7663f9ce07c9a00181">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: Female","year: 1972<br />births:  6<br />Sex: Female","year: 1984<br />births:  6<br />Sex: Female","year: 1985<br />births:  6<br />Sex: Female","year: 1988<br />births:  7<br />Sex: Female","year: 1991<br />births:  6<br />Sex: Female","year: 1995<br />births:  5<br />Sex: Female","year: 1997<br />births:  5<br />Sex: Female","year: 1999<br />births:  9<br />Sex: Female","year: 2001<br />births:  7<br />Sex: Female","year: 2002<br />births:  7<br />Sex: Female","year: 2005<br />births: 10<br />Sex: Female","year: 2006<br />births:  8<br />Sex: Female","year: 2007<br />births:  9<br />Sex: Female","year: 2008<br />births:  8<br />Sex: Female","year: 2009<br />births:  8<br />Sex: Female","year: 2010<br />births:  8<br />Sex: Female","year: 2011<br />births:  5<br />Sex: Female","year: 2012<br />births: 11<br />Sex: Female","year: 2014<br />births:  8<br />Sex: Female","year: 2016<br />births:  7<br />Sex: Female","year: 2018<br />births:  6<br />Sex: Female","year: 2019<br />births:  5<br />Sex: Female","year: 2020<br />births:  6<br />Sex: Female","year: 2021<br />births:  6<br />Sex: Female","year: 2023<br />births: 10<br />Sex: Female","year: 2024<br />births: 11<br />Sex: Female","year: 2025<br />births: 11<br />Sex: Female"],"type":"scatter","mode":"lines+markers","line":{"width":3.0236220472440949,"color":"rgba(231,76,60,1)","dash":"solid"},"hoveron":"points","name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,76,60,1)"}},"frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Registered Births of Celise Over Time (1962–2025)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"e4f278a06b34":{"x":{},"y":{},"colour":{},"type":"scatter"},"e4f27f29ccd1":{"x":{},"y":{},"colour":{}}},"cur_data":"e4f278a06b34","visdat":{"e4f278a06b34":["function (y) ","x"],"e4f27f29ccd1":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<p>Across all years in the Social Security dataset, <strong>100%</strong> of babies named Celise (207 total) are recorded as female, with 0 recorded as male.</p>
+<p>The timeline tracks registered births of Celise since 1962, consistently hovering between 5 and 11 births per year.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-aa4a4e4c1d1e7c2fc817" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-aa4a4e4c1d1e7c2fc817">{"x":{"data":[{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[55,64,46,18,12,6,6,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total: 55<br />Sex: Female","age_group: 10–19<br />plot_total: 64<br />Sex: Female","age_group: 20–29<br />plot_total: 46<br />Sex: Female","age_group: 30–39<br />plot_total: 18<br />Sex: Female","age_group: 40–49<br />plot_total: 12<br />Sex: Female","age_group: 50–59<br />plot_total:  6<br />Sex: Female","age_group: 60–69<br />plot_total:  6<br />Sex: Female","age_group: 70+<br />plot_total:  0<br />Sex: Female"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[0,0,0,0,0,0,0,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total:  0<br />Sex: Male","age_group: 10–19<br />plot_total:  0<br />Sex: Male","age_group: 20–29<br />plot_total:  0<br />Sex: Male","age_group: 30–39<br />plot_total:  0<br />Sex: Male","age_group: 40–49<br />plot_total:  0<br />Sex: Male","age_group: 50–59<br />plot_total:  0<br />Sex: Male","age_group: 60–69<br />plot_total:  0<br />Sex: Male","age_group: 70+<br />plot_total:  0<br />Sex: Male"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(52,152,219,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Male","legendgroup":"Male","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Population Pyramid for Celise (Estimated 2026 Ages)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"e4f21fdbb5f7":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"e4f21fdbb5f7","visdat":{"e4f21fdbb5f7":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>The population pyramid displays estimated age groups for Celises today: over half (119 out of 207) are under age 20, and 100% are female.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="historical-records-explorer" class="level2">
-<h2 class="anchored" data-anchor-id="historical-records-explorer">Historical Records Explorer</h2>
+<h2 class="anchored" data-anchor-id="historical-records-explorer">🔍 Historical Records Explorer</h2>
+<p>Search and sort through every registered year for the name Celise:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-0dd8048eefff3b294374" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-0dd8048eefff3b294374">{"x":{"filter":"none","vertical":false,"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F"],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Sex<\/th>\n      <th>Count<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"ftp","columnDefs":[{"className":"dt-right","targets":[0,2]},{"name":"Year","targets":0},{"name":"Sex","targets":1},{"name":"Count","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7142be2e124d67d77efe" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7142be2e124d67d77efe">{"x":{"filter":"none","vertical":false,"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F"],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Sex<\/th>\n      <th>Count<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"ftp","columnDefs":[{"className":"dt-right","targets":[0,2]},{"name":"Year","targets":0},{"name":"Sex","targets":1},{"name":"Count","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</section>
-<section id="births-of-celise-over-time-line-chart" class="level2">
-<h2 class="anchored" data-anchor-id="births-of-celise-over-time-line-chart">Births of “Celise” Over Time (Line Chart)</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-2059765a616c01def4f1" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-2059765a616c01def4f1">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: Female","year: 1972<br />births:  6<br />Sex: Female","year: 1984<br />births:  6<br />Sex: Female","year: 1985<br />births:  6<br />Sex: Female","year: 1988<br />births:  7<br />Sex: Female","year: 1991<br />births:  6<br />Sex: Female","year: 1995<br />births:  5<br />Sex: Female","year: 1997<br />births:  5<br />Sex: Female","year: 1999<br />births:  9<br />Sex: Female","year: 2001<br />births:  7<br />Sex: Female","year: 2002<br />births:  7<br />Sex: Female","year: 2005<br />births: 10<br />Sex: Female","year: 2006<br />births:  8<br />Sex: Female","year: 2007<br />births:  9<br />Sex: Female","year: 2008<br />births:  8<br />Sex: Female","year: 2009<br />births:  8<br />Sex: Female","year: 2010<br />births:  8<br />Sex: Female","year: 2011<br />births:  5<br />Sex: Female","year: 2012<br />births: 11<br />Sex: Female","year: 2014<br />births:  8<br />Sex: Female","year: 2016<br />births:  7<br />Sex: Female","year: 2018<br />births:  6<br />Sex: Female","year: 2019<br />births:  5<br />Sex: Female","year: 2020<br />births:  6<br />Sex: Female","year: 2021<br />births:  6<br />Sex: Female","year: 2023<br />births: 10<br />Sex: Female","year: 2024<br />births: 11<br />Sex: Female","year: 2025<br />births: 11<br />Sex: Female"],"type":"scatter","mode":"lines+markers","line":{"width":3.0236220472440949,"color":"rgba(228,26,28,1)","dash":"solid"},"hoveron":"points","name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(228,26,28,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(228,26,28,1)"}},"frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Registered Births of Celise Over Time (1962–2025)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"d551259cb7dd":{"x":{},"y":{},"colour":{},"type":"scatter"},"d5514d964d00":{"x":{},"y":{},"colour":{}}},"cur_data":"d551259cb7dd","visdat":{"d551259cb7dd":["function (y) ","x"],"d5514d964d00":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>The line chart tracks registered births of Celise since 1962, staying between 5 and 11 births in every recorded year.</p>
-</section>
-<section id="population-pyramid-for-celise" class="level2">
-<h2 class="anchored" data-anchor-id="population-pyramid-for-celise">Population Pyramid for “Celise”</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-31c9ce5f634e24d2d6bf" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-31c9ce5f634e24d2d6bf">{"x":{"data":[{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[55,64,46,18,12,6,6,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total: 55<br />Sex: Female","age_group: 10–19<br />plot_total: 64<br />Sex: Female","age_group: 20–29<br />plot_total: 46<br />Sex: Female","age_group: 30–39<br />plot_total: 18<br />Sex: Female","age_group: 40–49<br />plot_total: 12<br />Sex: Female","age_group: 50–59<br />plot_total:  6<br />Sex: Female","age_group: 60–69<br />plot_total:  6<br />Sex: Female","age_group: 70+<br />plot_total:  0<br />Sex: Female"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(228,26,28,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[0,0,0,0,0,0,0,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total:  0<br />Sex: Male","age_group: 10–19<br />plot_total:  0<br />Sex: Male","age_group: 20–29<br />plot_total:  0<br />Sex: Male","age_group: 30–39<br />plot_total:  0<br />Sex: Male","age_group: 40–49<br />plot_total:  0<br />Sex: Male","age_group: 50–59<br />plot_total:  0<br />Sex: Male","age_group: 60–69<br />plot_total:  0<br />Sex: Male","age_group: 70+<br />plot_total:  0<br />Sex: Male"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(55,126,184,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Male","legendgroup":"Male","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Population Pyramid for Celise (Estimated 2026 Ages)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"d5513fc12d58":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"d5513fc12d58","visdat":{"d5513fc12d58":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>The population pyramid illustrates the estimated age distribution for Celise today: over half of all Celises are under age 20, and 100% are female.</p>
 </section>
 <section id="name-detective-the-celise-quiz" class="level2">
 <h2 class="anchored" data-anchor-id="name-detective-the-celise-quiz">🎮 Name Detective: The Celise Quiz</h2>
@@ -141,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="game-container" style="max-width: 550px; margin: 2rem auto; padding: 1.5rem; border: 2px solid #2c3e50; border-radius: 12px; background: #f8f9fa; box-shadow: 0 4px 10px rgba(0,0,0,0.08); font-family: inherit;">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
     <h3 style="margin: 0; color: #2c3e50;" class="anchored">Name Detective Quiz</h3>
-    <span id="score-display" style="font-weight: bold; background: #2c3e50; color: white; padding: 4px 12px; border-radius: 20px;">Score: 0 / 3</span>
+    <span id="score-display" style="font-weight: bold; background: #2c3e50; color: white; padding: 4px 12px; border-radius: 20px;">Score: 0 / 6</span>
   </div>
   <p id="question-text" style="font-size: 1.15rem; font-weight: 600; color: #333; margin-bottom: 1rem;"></p>
   <div id="options-container" style="display: grid; gap: 0.5rem; margin-bottom: 1rem;"></div>
@@ -159,16 +189,39 @@ ul.task-list li input[type="checkbox"] {
       detail: "Correct! Exactly 0 males named Celise appear in the SSA records."
     },
     {
-      q: "What is the highest number of babies named Celise born in a single year?",
+      q: "In what year did the name Celise first appear in SSA records?",
+      options: ["1926", "1962", "1984", "2005"],
+      correct: 1,
+      detail: "Right! Celise first appeared in 1962 with 6 baby girls registered."
+    },
+    {
+      q: "What is the peak number of babies named Celise born in a single year?",
       options: ["11 babies", "48 babies", "105 babies", "207 babies"],
       correct: 0,
       detail: "Spot on! Celise peaked at 11 babies in 2012, 2024, and 2025 (207 is the all-time total)."
+    },
+    {
+      q: "Approximately how many total babies named Celise have been registered in U.S. history?",
+      options: ["84", "207", "1,450", "12,402"],
+      correct: 1,
+      detail: "Exactly! Across all recorded years from 1962 to 2025, there are 207 total Celises."
     },
     {
       q: "Over half of all living people named Celise today are under what age?",
       options: ["Age 10", "Age 20", "Age 35", "Age 50"],
       correct: 1,
       detail: "That's right! 119 out of 207 (57%) are under 20 years old, as shown in the population pyramid."
+    },
+    {
+      q: "Why don't years with fewer than 5 babies named Celise appear in this dataset?",
+      options: [
+        "SSA excludes counts under 5 to protect individual privacy",
+        "They were lost from historical archives",
+        "Only top 100 names each year are included",
+        "Birth certificates before 2000 didn't record names"
+      ],
+      correct: 0,
+      detail: "Correct! To safeguard privacy, the Social Security Administration only reports names with at least 5 occurrences in a year."
     }
   ];
 
@@ -185,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
     fb.innerHTML = "";
     nextBtn.style.display = "none";
     const item = quiz[current];
-    qText.textContent = `Question ${current + 1}: ${item.q}`;
+    qText.textContent = `Question ${current + 1} of ${quiz.length}: ${item.q}`;
     optContainer.innerHTML = "";
 
     item.options.forEach((opt, idx) => {
@@ -242,18 +295,18 @@ ul.task-list li input[type="checkbox"] {
     optContainer.innerHTML = "";
     nextBtn.style.display = "none";
     let message = "";
-    if (score === 3) {
+    if (score === quiz.length) {
       message = "🏆 Perfect Score! You're an official Celise demographic expert!";
-    } else if (score === 2) {
-      message = "👏 Great job! You know your baby name trivia!";
+    } else if (score >= quiz.length - 2) {
+      message = "👏 Great job! You really know your baby name data!";
     } else {
-      message = "Good try! Check out the charts above to discover the answers!";
+      message = "Good try! Check out the charts and table above to discover the answers!";
     }
     fb.innerHTML = `<div style="text-align: center; font-size: 1.1rem; padding: 10px;">${message}<br><br><strong>Final Score: ${score} / ${quiz.length}</strong></div>`;
     const restartBtn = document.createElement("button");
     restartBtn.textContent = "Play Again 🔄";
     restartBtn.style.cssText = "width: 100%; padding: 10px; background: #2c3e50; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;";
-    restartBtn.onclick = () => { current = 0; score = 0; scoreDisp.textContent = "Score: 0 / 3"; loadQuestion(); };
+    restartBtn.onclick = () => { current = 0; score = 0; scoreDisp.textContent = `Score: 0 / ${quiz.length}`; loadQuestion(); };
     optContainer.appendChild(restartBtn);
   }
 
@@ -669,4 +722,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="baby_files/libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
