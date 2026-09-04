@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="baby_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="baby_files/libs/quarto-html/anchor.min.js"></script>
 <link href="baby_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="baby_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="baby_files/libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="baby_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="baby_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="baby_files/libs/bootstrap/bootstrap-9f8a39c4cc452611d65c1e48be0278ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="baby_files/libs/bootstrap/bootstrap-7bb4b9d95c21074914f8c787a2a04081.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <style>html{ scroll-behavior: smooth; }</style>
 <link href="baby_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <script src="baby_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Page Contents</h2>
+    <h2 id="toc-title">Navigation</h2>
    
   <ul>
   <li><a href="#visual-demographics" id="toc-visual-demographics" class="nav-link active" data-scroll-target="#visual-demographics">📊 Visual Demographics</a></li>
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Story of the Name Celise</h1>
-<p class="subtitle lead">An Interactive Exploration of U.S. Social Security Baby Names</p>
+<p class="subtitle lead">An Interactive Demographic Exploration of U.S. Social Security Records</p>
 </div>
 
 
@@ -107,86 +107,102 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
   body {
-    background: linear-gradient(135deg, #fff1f5 0%, #fdfcf9 50%, #f0fdf9 100%);
+    background: radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+                #0b0f19;
+    color: #e2e8f0;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
   .stat-card {
-    border-radius: 18px;
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
     padding: 1.4rem 1rem;
-    box-shadow: 0 6px 18px rgba(244, 114, 182, 0.08);
-    border: 2px solid transparent;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.25s ease-in-out;
   }
   .stat-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 12px 28px rgba(244, 114, 182, 0.16);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(6, 182, 212, 0.2);
+    border-color: rgba(6, 182, 212, 0.4);
   }
   .dashboard-card {
-    background: #ffffff;
-    border-radius: 20px;
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(16px);
+    border-radius: 18px;
     padding: 1.6rem;
-    box-shadow: 0 8px 25px rgba(244, 114, 182, 0.07);
-    border: 2px solid #fce7f3;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     margin-bottom: 1.8rem;
   }
+  .cyber-pill {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    margin: 0 4px;
+    display: inline-block;
+    backdrop-filter: blur(8px);
+  }
 </style>
-<p><img src="baby_names_banner.png" class="img-fluid" style="border-radius: 20px; margin-top: 1rem; margin-bottom: 2rem; width: 100%; box-shadow: 0 10px 28px rgba(244, 114, 182, 0.15); border: 3px solid #ffffff;" alt="Baby Names Banner"></p>
-<div style="text-align: center; margin-bottom: 1.5rem;">
-<p><span style="background: #ffe4e6; color: #e11d48; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin: 0 4px; display: inline-block;">🌸 Rare Hidden Gem</span> <span style="background: #ede9fe; color: #7c3aed; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin: 0 4px; display: inline-block;">✨ 100% Female</span> <span style="background: #ccfbf1; color: #0d9488; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin: 0 4px; display: inline-block;">🎀 Gen-Z &amp; Alpha Peak</span></p>
+<p><img src="cool_neon_banner.png" class="img-fluid" style="border-radius: 16px; margin-top: 1rem; margin-bottom: 2rem; width: 100%; box-shadow: 0 12px 36px rgba(0, 242, 254, 0.15); border: 1px solid rgba(6, 182, 212, 0.3);" alt="Celise Data Lab Banner"></p>
+<div style="text-align: center; margin-bottom: 1.75rem;">
+<p><span class="cyber-pill" style="background: rgba(6, 182, 212, 0.15); color: #22d3ee; border: 1px solid rgba(6, 182, 212, 0.3);">⚡ Rare Demographic Gem</span> <span class="cyber-pill" style="background: rgba(139, 92, 246, 0.15); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.3);">🔮 100% Female Distribution</span> <span class="cyber-pill" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);">🚀 Modern Peak Era (2024–2025)</span></p>
 </div>
 <div class="grid" style="margin-bottom: 2rem; text-align: center;">
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="stat-card" style="background: #fff1f2; border-color: #fecdd3;">
+<div class="stat-card" style="border-top: 3px solid #06b6d4;">
 <div style="font-size: 1.8rem; margin-bottom: 0.2rem;">
-🧸
+🌐
 </div>
-<h2 style="color: #e11d48; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
+<h2 style="color: #22d3ee; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
 207
 </h2>
-<p><span style="color: #9f1239; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Total In U.S. History</span></p>
+<p><span style="color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Total In U.S. History</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="stat-card" style="background: #ecfdf5; border-color: #a7f3d0;">
+<div class="stat-card" style="border-top: 3px solid #10b981;">
 <div style="font-size: 1.8rem; margin-bottom: 0.2rem;">
-🐣
+⏱️
 </div>
-<h2 style="color: #059669; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
+<h2 style="color: #34d399; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
 1962
 </h2>
-<p><span style="color: #065f46; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Debut In Records</span></p>
+<p><span style="color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Debut In Archive</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="stat-card" style="background: #faf5ff; border-color: #e9d5ff;">
+<div class="stat-card" style="border-top: 3px solid #8b5cf6;">
 <div style="font-size: 1.8rem; margin-bottom: 0.2rem;">
-⭐
+⚡
 </div>
-<h2 style="color: #7c3aed; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
+<h2 style="color: #a78bfa; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
 11
 </h2>
-<p><span style="color: #5b21b6; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Peak Annual Births</span></p>
+<p><span style="color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Peak Annual Births</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="stat-card" style="background: #fff7ed; border-color: #fed7aa;">
+<div class="stat-card" style="border-top: 3px solid #f43f5e;">
 <div style="font-size: 1.8rem; margin-bottom: 0.2rem;">
-💖
+🧬
 </div>
-<h2 style="color: #ea580c; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
+<h2 style="color: #fb7185; font-weight: 800; margin: 0; font-size: 2.3rem;" class="anchored">
 100%
 </h2>
-<p><span style="color: #9a3412; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Female Registrations</span></p>
+<p><span style="color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">Female Registrations</span></p>
 </div>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note" style="border-left: 4px solid #f43f5e; margin-bottom: 2rem; background: #fff5f7; border-radius: 14px; box-shadow: 0 4px 12px rgba(244, 63, 94, 0.06);">
+<div class="callout callout-style-simple callout-note" style="border-left: 4px solid #06b6d4; margin-bottom: 2rem; background: rgba(17, 24, 39, 0.7); border-radius: 12px; color: #cbd5e1;">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>💡 Sweet Finding:</strong> In the entire Social Security Administration archive (1880–2025), <strong>Celise</strong> has been bestowed exclusively on baby girls (207 recorded, 0 boys). It’s currently having a lovely modern resurgence, matching its all-time high of 11 births in both 2024 and 2025!</p>
+<p><strong>Demographic Analysis:</strong> In the complete SSA historical database (1880–2025), <strong>Celise</strong> has been documented exclusively for female births (207 recorded occurrences, 0 males). The name tied its all-time record of 11 births per year in both 2024 and 2025.</p>
 </div>
 </div>
 </div>
@@ -194,33 +210,33 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="visual-demographics">📊 Visual Demographics</h2>
 <div class="grid">
 <div class="g-col-12 g-col-lg-6">
-<div class="dashboard-card">
-<h4 style="margin-top: 0; color: #be185d; font-weight: 700;" class="anchored">
+<div class="dashboard-card" style="border-top: 3px solid #06b6d4;">
+<h4 style="margin-top: 0; color: #22d3ee; font-weight: 700;" class="anchored">
 📈 Annual Births Timeline
 </h4>
-<p style="color: #831843; font-size: 0.9rem; margin-bottom: 1rem;">
-Tracking recorded births of Celise between 1962 and 2025.
+<p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem;">
+Registered births of Celise recorded between 1962 and 2025.
 </p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-26cab8e402827365669b" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-26cab8e402827365669b">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: #ec4899","year: 1972<br />births:  6<br />Sex: #ec4899","year: 1984<br />births:  6<br />Sex: #ec4899","year: 1985<br />births:  6<br />Sex: #ec4899","year: 1988<br />births:  7<br />Sex: #ec4899","year: 1991<br />births:  6<br />Sex: #ec4899","year: 1995<br />births:  5<br />Sex: #ec4899","year: 1997<br />births:  5<br />Sex: #ec4899","year: 1999<br />births:  9<br />Sex: #ec4899","year: 2001<br />births:  7<br />Sex: #ec4899","year: 2002<br />births:  7<br />Sex: #ec4899","year: 2005<br />births: 10<br />Sex: #ec4899","year: 2006<br />births:  8<br />Sex: #ec4899","year: 2007<br />births:  9<br />Sex: #ec4899","year: 2008<br />births:  8<br />Sex: #ec4899","year: 2009<br />births:  8<br />Sex: #ec4899","year: 2010<br />births:  8<br />Sex: #ec4899","year: 2011<br />births:  5<br />Sex: #ec4899","year: 2012<br />births: 11<br />Sex: #ec4899","year: 2014<br />births:  8<br />Sex: #ec4899","year: 2016<br />births:  7<br />Sex: #ec4899","year: 2018<br />births:  6<br />Sex: #ec4899","year: 2019<br />births:  5<br />Sex: #ec4899","year: 2020<br />births:  6<br />Sex: #ec4899","year: 2021<br />births:  6<br />Sex: #ec4899","year: 2023<br />births: 10<br />Sex: #ec4899","year: 2024<br />births: 11<br />Sex: #ec4899","year: 2025<br />births: 11<br />Sex: #ec4899"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(236,72,153,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: #be185d","year: 1972<br />births:  6<br />Sex: #be185d","year: 1984<br />births:  6<br />Sex: #be185d","year: 1985<br />births:  6<br />Sex: #be185d","year: 1988<br />births:  7<br />Sex: #be185d","year: 1991<br />births:  6<br />Sex: #be185d","year: 1995<br />births:  5<br />Sex: #be185d","year: 1997<br />births:  5<br />Sex: #be185d","year: 1999<br />births:  9<br />Sex: #be185d","year: 2001<br />births:  7<br />Sex: #be185d","year: 2002<br />births:  7<br />Sex: #be185d","year: 2005<br />births: 10<br />Sex: #be185d","year: 2006<br />births:  8<br />Sex: #be185d","year: 2007<br />births:  9<br />Sex: #be185d","year: 2008<br />births:  8<br />Sex: #be185d","year: 2009<br />births:  8<br />Sex: #be185d","year: 2010<br />births:  8<br />Sex: #be185d","year: 2011<br />births:  5<br />Sex: #be185d","year: 2012<br />births: 11<br />Sex: #be185d","year: 2014<br />births:  8<br />Sex: #be185d","year: 2016<br />births:  7<br />Sex: #be185d","year: 2018<br />births:  6<br />Sex: #be185d","year: 2019<br />births:  5<br />Sex: #be185d","year: 2020<br />births:  6<br />Sex: #be185d","year: 2021<br />births:  6<br />Sex: #be185d","year: 2023<br />births: 10<br />Sex: #be185d","year: 2024<br />births: 11<br />Sex: #be185d","year: 2025<br />births: 11<br />Sex: #be185d"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(251,207,232,1)","opacity":1,"size":9.4488188976377963,"symbol":"circle","line":{"width":4.5354330708661417,"color":"rgba(190,24,93,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Registered Births of Celise Over Time (1962–2025) <\/b>","font":{"color":"rgba(131,24,67,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"11aa542fb2317":{"x":{},"y":{},"colour":{},"type":"scatter"},"11aa53a06eacb":{"x":{},"y":{},"colour":{}}},"cur_data":"11aa542fb2317","visdat":{"11aa542fb2317":["function (y) ","x"],"11aa53a06eacb":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-5923dec249cb3927bda3" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5923dec249cb3927bda3">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6","year: 1972<br />births:  6","year: 1984<br />births:  6","year: 1985<br />births:  6","year: 1988<br />births:  7","year: 1991<br />births:  6","year: 1995<br />births:  5","year: 1997<br />births:  5","year: 1999<br />births:  9","year: 2001<br />births:  7","year: 2002<br />births:  7","year: 2005<br />births: 10","year: 2006<br />births:  8","year: 2007<br />births:  9","year: 2008<br />births:  8","year: 2009<br />births:  8","year: 2010<br />births:  8","year: 2011<br />births:  5","year: 2012<br />births: 11","year: 2014<br />births:  8","year: 2016<br />births:  7","year: 2018<br />births:  6","year: 2019<br />births:  5","year: 2020<br />births:  6","year: 2021<br />births:  6","year: 2023<br />births: 10","year: 2024<br />births: 11","year: 2025<br />births: 11"],"type":"scatter","mode":"lines+markers","line":{"width":4.5354330708661417,"color":"rgba(6,182,212,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(8,51,68,1)","opacity":1,"size":11.338582677165356,"symbol":"circle","line":{"width":6.0472440944881898,"color":"rgba(34,211,238,1)"}},"frame":null}],"layout":{"margin":{"t":39.246160232461605,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"plot_bgcolor":"rgba(17,24,39,1)","paper_bgcolor":"rgba(17,24,39,1)","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Registered Births of Celise Over Time (1962–2025) <\/b>","font":{"color":"rgba(56,189,248,1)","family":"","size":15.940224159402243},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(148,163,184,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(31,41,55,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(148,163,184,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(31,41,55,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(226,232,240,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"129995ad49348":{"x":{},"y":{},"type":"scatter"},"12999497bfa8b":{"x":{},"y":{}}},"cur_data":"129995ad49348","visdat":{"129995ad49348":["function (y) ","x"],"12999497bfa8b":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </div>
 <div class="g-col-12 g-col-lg-6">
-<div class="dashboard-card">
-<h4 style="margin-top: 0; color: #be185d; font-weight: 700;" class="anchored">
+<div class="dashboard-card" style="border-top: 3px solid #8b5cf6;">
+<h4 style="margin-top: 0; color: #c084fc; font-weight: 700;" class="anchored">
 🏛️ Living Population Pyramid
 </h4>
-<p style="color: #831843; font-size: 0.9rem; margin-bottom: 1rem;">
+<p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem;">
 Estimated 2026 age brackets (57% under age 20).
 </p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-45ab45ab3ece0bc7a186" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-45ab45ab3ece0bc7a186">{"x":{"data":[{"orientation":"h","width":[0.64999999999999991,0.64999999999999991,0.65000000000000013,0.65000000000000013,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.64999999999999947,0.64999999999999947],"base":[0,55,0,64,0,46,0,18,0,12,0,6,0,6,0,0],"x":[55,0,64,0,46,0,18,0,12,0,6,0,6,0,0,0],"y":[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8],"text":["age_group: 0–9<br />plot_total: 55<br />Sex: #f472b6","age_group: 0–9<br />plot_total:  0<br />Sex: #f472b6","age_group: 10–19<br />plot_total: 64<br />Sex: #f472b6","age_group: 10–19<br />plot_total:  0<br />Sex: #f472b6","age_group: 20–29<br />plot_total: 46<br />Sex: #f472b6","age_group: 20–29<br />plot_total:  0<br />Sex: #f472b6","age_group: 30–39<br />plot_total: 18<br />Sex: #f472b6","age_group: 30–39<br />plot_total:  0<br />Sex: #f472b6","age_group: 40–49<br />plot_total: 12<br />Sex: #f472b6","age_group: 40–49<br />plot_total:  0<br />Sex: #f472b6","age_group: 50–59<br />plot_total:  6<br />Sex: #f472b6","age_group: 50–59<br />plot_total:  0<br />Sex: #f472b6","age_group: 60–69<br />plot_total:  6<br />Sex: #f472b6","age_group: 60–69<br />plot_total:  0<br />Sex: #f472b6","age_group: 70+<br />plot_total:  0<br />Sex: #f472b6","age_group: 70+<br />plot_total:  0<br />Sex: #f472b6"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(244,114,182,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Population Pyramid for Celise (Estimated 2026 Ages) <\/b>","font":{"color":"rgba(131,24,67,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"11aa555d62fe":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"11aa555d62fe","visdat":{"11aa555d62fe":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-7a4a2605e1f7a2712151" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-7a4a2605e1f7a2712151">{"x":{"data":[{"orientation":"h","width":[0.64999999999999991,0.64999999999999991,0.65000000000000013,0.65000000000000013,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.65000000000000036,0.64999999999999947,0.64999999999999947],"base":[0,55,0,64,0,46,0,18,0,12,0,6,0,6,0,0],"x":[55,0,64,0,46,0,18,0,12,0,6,0,6,0,0,0],"y":[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8],"text":["age_group: 0–9<br />plot_total: 55","age_group: 0–9<br />plot_total:  0","age_group: 10–19<br />plot_total: 64","age_group: 10–19<br />plot_total:  0","age_group: 20–29<br />plot_total: 46","age_group: 20–29<br />plot_total:  0","age_group: 30–39<br />plot_total: 18","age_group: 30–39<br />plot_total:  0","age_group: 40–49<br />plot_total: 12","age_group: 40–49<br />plot_total:  0","age_group: 50–59<br />plot_total:  6","age_group: 50–59<br />plot_total:  0","age_group: 60–69<br />plot_total:  6","age_group: 60–69<br />plot_total:  0","age_group: 70+<br />plot_total:  0","age_group: 70+<br />plot_total:  0"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(168,85,247,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":39.246160232461605,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"plot_bgcolor":"rgba(17,24,39,1)","paper_bgcolor":"rgba(17,24,39,1)","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Population Pyramid for Celise (Estimated 2026 Ages) <\/b>","font":{"color":"rgba(192,132,252,1)","family":"","size":15.940224159402243},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(148,163,184,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(31,41,55,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(148,163,184,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(31,41,55,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(226,232,240,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(226,232,240,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"129996ade48fa":{"x":{},"y":{},"type":"bar"}},"cur_data":"129996ade48fa","visdat":{"129996ade48fa":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -229,48 +245,48 @@ Estimated 2026 age brackets (57% under age 20).
 </section>
 <section id="historical-records-explorer" class="level2">
 <h2 class="anchored" data-anchor-id="historical-records-explorer">🔍 Historical Records Explorer</h2>
-<div class="dashboard-card" style="border-top: 5px solid #8b5cf6;">
-<h4 style="margin-top: 0; color: #6d28d9; font-weight: 700;" class="anchored">
+<div class="dashboard-card" style="border-top: 3px solid #8b5cf6;">
+<h4 style="margin-top: 0; color: #c084fc; font-weight: 700;" class="anchored">
 ✨ Complete Social Security Archive
 </h4>
-<p style="color: #6d28d9; font-size: 0.95rem; margin-bottom: 1.5rem;">
+<p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">
 Search, sort, and export every registered year for the name Celise. Filter by decade, see age milestones, and check per-million rarity rates!
 </p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-db9e4c8542b3265f84a6" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-db9e4c8542b3265f84a6">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1962\" data-max=\"2025\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"64\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"5\" data-max=\"11\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"2.84\" data-max=\"6.84\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["2020s","2020s","2020s","2020s","2020s","2010s","2010s","2010s","2010s","2010s","2010s","2010s","2000s","2000s","2000s","2000s","2000s","2000s","2000s","1990s","1990s","1990s","1990s","1980s","1980s","1980s","1970s","1960s"],[1,2,3,5,6,7,8,10,12,14,15,16,17,18,19,20,21,24,25,27,29,31,35,38,41,42,54,64],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6],["5.3%","5.3%","4.8%","2.9%","2.9%","2.4%","2.9%","3.4%","3.9%","5.3%","2.4%","3.9%","3.9%","3.9%","4.3%","3.9%","4.8%","3.4%","3.4%","4.3%","2.4%","2.4%","2.9%","3.4%","2.9%","2.9%","2.9%","2.9%"],[6.84,6.79,6.23,3.66,3.71,2.98,3.53,3.95,4.48,6.25,2.84,4.5,4.35,4.23,4.68,4.21,5.41,3.9,3.89,5.07,2.87,2.84,3.2,3.93,3.49,3.56,3.94,3.05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Decade<\/th>\n      <th>Age Today<\/th>\n      <th>Count<\/th>\n      <th>% of All Celises<\/th>\n      <th>Per Million Female Births<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"Bfrtip","buttons":["copy","csv","excel"],"columnDefs":[{"className":"dt-right","targets":[0,2,3,5]},{"name":"Year","targets":0},{"name":"Decade","targets":1},{"name":"Age Today","targets":2},{"name":"Count","targets":3},{"name":"% of All Celises","targets":4},{"name":"Per Million Female Births","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-afd4162e6de088a1d449" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-afd4162e6de088a1d449">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1962\" data-max=\"2025\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"64\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"5\" data-max=\"11\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"2.84\" data-max=\"6.84\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["2020s","2020s","2020s","2020s","2020s","2010s","2010s","2010s","2010s","2010s","2010s","2010s","2000s","2000s","2000s","2000s","2000s","2000s","2000s","1990s","1990s","1990s","1990s","1980s","1980s","1980s","1970s","1960s"],[1,2,3,5,6,7,8,10,12,14,15,16,17,18,19,20,21,24,25,27,29,31,35,38,41,42,54,64],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6],["5.3%","5.3%","4.8%","2.9%","2.9%","2.4%","2.9%","3.4%","3.9%","5.3%","2.4%","3.9%","3.9%","3.9%","4.3%","3.9%","4.8%","3.4%","3.4%","4.3%","2.4%","2.4%","2.9%","3.4%","2.9%","2.9%","2.9%","2.9%"],[6.84,6.79,6.23,3.66,3.71,2.98,3.53,3.95,4.48,6.25,2.84,4.5,4.35,4.23,4.68,4.21,5.41,3.9,3.89,5.07,2.87,2.84,3.2,3.93,3.49,3.56,3.94,3.05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Decade<\/th>\n      <th>Age Today<\/th>\n      <th>Count<\/th>\n      <th>% of All Celises<\/th>\n      <th>Per Million Female Births<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"Bfrtip","buttons":["copy","csv","excel"],"columnDefs":[{"className":"dt-right","targets":[0,2,3,5]},{"name":"Year","targets":0},{"name":"Decade","targets":1},{"name":"Age Today","targets":2},{"name":"Count","targets":3},{"name":"% of All Celises","targets":4},{"name":"Per Million Female Births","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </section>
 <section id="name-detective-the-celise-quiz-challenge" class="level2">
 <h2 class="anchored" data-anchor-id="name-detective-the-celise-quiz-challenge">🎮 Name Detective: The Celise Quiz Challenge</h2>
-<div class="dashboard-card" style="max-width: 660px; margin: 2rem auto; border-top: 5px solid #ec4899; box-shadow: 0 12px 35px rgba(236, 72, 153, 0.12);">
+<div class="dashboard-card" style="max-width: 680px; margin: 2rem auto; border-top: 3px solid #06b6d4; box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(6, 182, 212, 0.15);">
 
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 8px;">
     <div>
-      <h3 style="margin: 0; color: #be185d; font-weight: 800; font-size: 1.4rem;" class="anchored">🕵️‍♀️ Name Detective Challenge</h3>
-      <span style="font-size: 0.85rem; color: #9d174d;">Can you achieve the title of Supreme Name Whisperer?</span>
+      <h3 style="margin: 0; color: #22d3ee; font-weight: 800; font-size: 1.4rem;" class="anchored">⚡ Name Detective Terminal</h3>
+      <span style="font-size: 0.85rem; color: #94a3b8;">Decode the secret demographics of Celise</span>
     </div>
     <div style="display: flex; gap: 6px; align-items: center;">
-      <span id="streak-display" style="background: #fef3c7; color: #b45309; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; display: none;">🔥 Streak: 0</span>
-      <span id="score-display" style="font-weight: 800; background: #ec4899; color: white; padding: 5px 14px; border-radius: 20px; font-size: 0.9rem;">Score: 0 / 10</span>
+      <span id="streak-display" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; display: none;">🔥 Streak: 0</span>
+      <span id="score-display" style="font-weight: 800; background: #06b6d4; color: #083344; padding: 5px 14px; border-radius: 20px; font-size: 0.9rem;">Score: 0 / 10</span>
     </div>
   </div>
 
   <!-- Progress bar -->
-  <div style="background: #fce7f3; height: 10px; border-radius: 6px; overflow: hidden; margin-bottom: 1.5rem;">
-    <div id="quiz-progress" style="background: linear-gradient(90deg, #ec4899, #8b5cf6); height: 100%; width: 10%; transition: width 0.35s ease-in-out;"></div>
+  <div style="background: #1e293b; height: 10px; border-radius: 6px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.05);">
+    <div id="quiz-progress" style="background: linear-gradient(90deg, #06b6d4, #8b5cf6); height: 100%; width: 10%; transition: width 0.35s ease-in-out; box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);"></div>
   </div>
 
-  <div id="question-card" style="background: #fff5f8; border-radius: 14px; padding: 1.2rem; margin-bottom: 1.25rem; border: 1.5px solid #fbcfe8;">
-    <p id="question-text" style="font-size: 1.15rem; font-weight: 700; color: #831843; margin: 0; line-height: 1.4;"></p>
+  <div id="question-card" style="background: rgba(15, 23, 42, 0.85); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.25rem; border: 1px solid rgba(56, 189, 248, 0.2);">
+    <p id="question-text" style="font-size: 1.15rem; font-weight: 700; color: #f8fafc; margin: 0; line-height: 1.45;"></p>
   </div>
 
   <div id="options-container" style="display: grid; gap: 0.65rem; margin-bottom: 1.25rem;"></div>
   <div id="feedback" style="min-height: 36px; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.25rem;"></div>
-  <button id="next-btn" style="display: none; width: 100%; padding: 12px; background: linear-gradient(135deg, #ec4899, #db2777); color: white; border: none; border-radius: 10px; font-size: 1.05rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 12px rgba(236,72,153,0.3);">Next Question ➔</button>
+  <button id="next-btn" style="display: none; width: 100%; padding: 12px; background: linear-gradient(135deg, #06b6d4, #0284c7); color: #082f49; border: none; border-radius: 10px; font-size: 1.05rem; font-weight: 800; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.35);">Next Question ➔</button>
 
 </div>
 
@@ -412,9 +428,9 @@ Search, sort, and export every registered year for the name Celise. Filter by de
     item.options.forEach((opt, idx) => {
       const btn = document.createElement("button");
       btn.textContent = opt;
-      btn.style.cssText = "padding: 12px 16px; text-align: left; background: #ffffff; border: 1.5px solid #fbcfe8; border-radius: 12px; font-size: 0.98rem; font-weight: 500; color: #475569; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.02);";
-      btn.onmouseover = () => { if (!btn.disabled) { btn.style.background = "#fff1f5"; btn.style.borderColor = "#f472b6"; btn.style.transform = "translateX(4px)"; } };
-      btn.onmouseout = () => { if (!btn.disabled) { btn.style.background = "#ffffff"; btn.style.borderColor = "#fbcfe8"; btn.style.transform = "none"; } };
+      btn.style.cssText = "padding: 12px 16px; text-align: left; background: #0f172a; border: 1px solid #334155; border-radius: 12px; font-size: 0.98rem; font-weight: 500; color: #e2e8f0; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.2);";
+      btn.onmouseover = () => { if (!btn.disabled) { btn.style.background = "#1e293b"; btn.style.borderColor = "#06b6d4"; btn.style.boxShadow = "0 0 12px rgba(6, 182, 212, 0.25)"; btn.style.transform = "translateX(4px)"; } };
+      btn.onmouseout = () => { if (!btn.disabled) { btn.style.background = "#0f172a"; btn.style.borderColor = "#334155"; btn.style.boxShadow = "none"; btn.style.transform = "none"; } };
       btn.onclick = () => selectOption(idx);
       optContainer.appendChild(btn);
     });
@@ -428,21 +444,23 @@ Search, sort, and export every registered year for the name Celise. Filter by de
       b.style.cursor = "default";
       b.style.transform = "none";
       if (i === item.correct) {
-        b.style.background = "#d1fae5";
+        b.style.background = "rgba(16, 185, 129, 0.25)";
         b.style.borderColor = "#10b981";
-        b.style.color = "#065f46";
+        b.style.color = "#34d399";
         b.style.fontWeight = "bold";
+        b.style.boxShadow = "0 0 15px rgba(16, 185, 129, 0.35)";
       } else if (i === idx) {
-        b.style.background = "#fee2e2";
-        b.style.borderColor = "#ef4444";
-        b.style.color = "#991b1b";
+        b.style.background = "rgba(244, 63, 94, 0.25)";
+        b.style.borderColor = "#f43f5e";
+        b.style.color = "#fda4af";
+        b.style.boxShadow = "0 0 15px rgba(244, 63, 94, 0.35)";
       }
     });
 
     if (idx === item.correct) {
       score++;
       streak++;
-      fb.innerHTML = `<span style="color: #059669;">✨ ${item.detail}</span>`;
+      fb.innerHTML = `<span style="color: #34d399;">✨ ${item.detail}</span>`;
       if (streak >= 2) {
         streakDisp.textContent = `🔥 Streak: ${streak}!`;
         streakDisp.style.display = "inline-block";
@@ -450,7 +468,7 @@ Search, sort, and export every registered year for the name Celise. Filter by de
     } else {
       streak = 0;
       streakDisp.style.display = "none";
-      fb.innerHTML = `<span style="color: #dc2626;">💭 Nice try! ${item.detail}</span>`;
+      fb.innerHTML = `<span style="color: #fb7185;">💭 Nice try! ${item.detail}</span>`;
     }
 
     scoreDisp.textContent = `Score: ${score} / ${quiz.length}`;
@@ -467,7 +485,7 @@ Search, sort, and export every registered year for the name Celise. Filter by de
   }
 
   function showResults() {
-    qText.textContent = "🎉 Investigation Complete!";
+    qText.textContent = "⚡ Investigation Complete!";
     optContainer.innerHTML = "";
     nextBtn.style.display = "none";
     streakDisp.style.display = "none";
@@ -480,35 +498,35 @@ Search, sort, and export every registered year for the name Celise. Filter by de
     if (score === quiz.length) {
       badgeEmoji = "👑";
       rankTitle = "Supreme Name Whisperer";
-      message = "Flawless genius! You answered every question correctly and mastered the history of Celise!";
+      message = "Flawless genius! You decoded every single demographic secret of Celise with 100% accuracy!";
     } else if (score >= quiz.length - 2) {
       badgeEmoji = "🌟";
-      rankTitle = "Master Name Sleuth";
+      rankTitle = "Master Data Sleuth";
       message = "Outstanding work! You have sharp demographic instincts and know your data inside and out!";
     } else if (score >= 5) {
-      badgeEmoji = "🐣";
-      rankTitle = "Apprentice Detective";
+      badgeEmoji = "🛰️";
+      rankTitle = "Junior Demographic Analyst";
       message = "Great effort! You've uncovered the core story of this rare and wonderful name!";
     } else {
       badgeEmoji = "🔍";
       rankTitle = "Curious Novice";
-      message = "A good start! Review the charts and table above to discover all the hidden secrets of Celise!";
+      message = "A good start! Review the interactive charts and historical table above to master the data!";
     }
 
     fb.innerHTML = `
-      <div style="text-align: center; padding: 1.5rem 1rem; background: #fff1f2; border-radius: 16px; border: 2px solid #fecdd3;">
+      <div style="text-align: center; padding: 1.5rem 1rem; background: #0f172a; border-radius: 16px; border: 1.5px solid rgba(6, 182, 212, 0.4); box-shadow: 0 0 25px rgba(6, 182, 212, 0.15);">
         <div style="font-size: 3rem; margin-bottom: 0.5rem;">${badgeEmoji}</div>
-        <h3 style="color: #be185d; margin: 0 0 0.5rem 0; font-weight: 800;">${rankTitle}</h3>
-        <p style="color: #831843; font-size: 1rem; margin-bottom: 1rem;">${message}</p>
-        <div style="font-size: 1.4rem; font-weight: 800; color: #ec4899; margin-bottom: 1rem;">Final Score: ${score} / ${quiz.length}</div>
+        <h3 style="color: #22d3ee; margin: 0 0 0.5rem 0; font-weight: 800;">${rankTitle}</h3>
+        <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 1rem;">${message}</p>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #38bdf8; margin-bottom: 1rem;">Final Score: ${score} / ${quiz.length}</div>
       </div>
     `;
 
     const restartBtn = document.createElement("button");
-    restartBtn.textContent = "Play Again 🔄";
-    restartBtn.style.cssText = "width: 100%; margin-top: 1rem; padding: 12px; background: #be185d; color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background 0.2s;";
-    restartBtn.onmouseover = () => restartBtn.style.background = "#9d174d";
-    restartBtn.onmouseout = () => restartBtn.style.background = "#be185d";
+    restartBtn.textContent = "Reboot Terminal 🔄";
+    restartBtn.style.cssText = "width: 100%; margin-top: 1rem; padding: 12px; background: #06b6d4; color: #083344; border: none; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background 0.2s;";
+    restartBtn.onmouseover = () => restartBtn.style.background = "#22d3ee";
+    restartBtn.onmouseout = () => restartBtn.style.background = "#06b6d4";
     restartBtn.onclick = () => { current = 0; score = 0; streak = 0; scoreDisp.textContent = `Score: 0 / ${quiz.length}`; loadQuestion(); };
     optContainer.appendChild(restartBtn);
   }
