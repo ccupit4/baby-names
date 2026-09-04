@@ -1,0 +1,50 @@
+---
+title: "Baby Names"
+format: html
+execute:
+  echo: true
+---
+
+## Loading the Data
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+
+# Find all yearly data files
+files <- list.files("data", pattern = "yob\\d+\\.txt", full.names = TRUE)
+
+# Read all files into one table and extract the year from the filename
+baby_names <- read_csv(
+  files,
+  id = "file",
+  col_names = c("name", "sex", "count"),
+  show_col_types = FALSE
+) |>
+  mutate(year = parse_number(file)) |>
+  select(-file)
+```
+
+## Trend of "David" (Past 100 Years)
+
+```{r}
+#| label: david-trend
+
+david_100yr <- baby_names |>
+  filter(name == "David", year >= 1926) |>
+  group_by(year) |>
+  summarize(total = sum(count), .groups = "drop")
+
+ggplot(david_100yr, aes(x = year, y = total)) +
+  geom_line(color = "steelblue", linewidth = 1) +
+  labs(
+    title = "Number of Babies Named David (1926–2025)",
+    x = "Year",
+    y = "Count"
+  ) +
+  theme_minimal()
+```
+
+Over the past 100 years (1926–2025), the name David surged during the baby boom era, peaking in 1955 with 86,454 babies, before steadily declining to 6,801 in 2025.
