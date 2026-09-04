@@ -71,19 +71,19 @@ ul.task-list li input[type="checkbox"] {
 
 <body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Navigation</h2>
+    <h2 id="toc-title">Page Contents</h2>
    
   <ul>
-  <li><a href="#visual-demographics" id="toc-visual-demographics" class="nav-link active" data-scroll-target="#visual-demographics">Visual Demographics</a></li>
+  <li><a href="#visual-demographics" id="toc-visual-demographics" class="nav-link active" data-scroll-target="#visual-demographics">📊 Visual Demographics</a></li>
   <li><a href="#historical-records-explorer" id="toc-historical-records-explorer" class="nav-link" data-scroll-target="#historical-records-explorer">🔍 Historical Records Explorer</a></li>
   <li><a href="#name-detective-the-celise-quiz" id="toc-name-detective-the-celise-quiz" class="nav-link" data-scroll-target="#name-detective-the-celise-quiz">🎮 Name Detective: The Celise Quiz</a></li>
   </ul>
 </nav>
 </div>
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -105,89 +105,157 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="baby_names_banner.png" class="img-fluid" style="border-radius: 12px; margin-top: 1rem; margin-bottom: 1.5rem; width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Baby Names Banner"></p>
-<div class="grid" style="margin-top: 1.5rem; margin-bottom: 2rem; text-align: center;">
+<style>
+  body {
+    background-color: #f8fafc;
+  }
+  .stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  }
+  .dashboard-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+  }
+</style>
+<p><img src="baby_names_banner.png" class="img-fluid" style="border-radius: 14px; margin-top: 1rem; margin-bottom: 2rem; width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,0.07);" alt="Baby Names Banner"></p>
+<div class="grid" style="margin-bottom: 2rem; text-align: center;">
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="card p-3 bg-light border-0 shadow-sm">
-<h2 style="color: #2c3e50; font-weight: bold; margin: 0;" class="anchored">
+<div class="stat-card" style="border-top: 4px solid #2c3e50;">
+<div style="font-size: 1.5rem; margin-bottom: 0.25rem;">
+👶
+</div>
+<h2 style="color: #2c3e50; font-weight: 800; margin: 0; font-size: 2.2rem;" class="anchored">
 207
 </h2>
-<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Total Recorded</span></p>
+<p><span style="color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Total Recorded</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="card p-3 bg-light border-0 shadow-sm">
-<h2 style="color: #18bc9c; font-weight: bold; margin: 0;" class="anchored">
+<div class="stat-card" style="border-top: 4px solid #18bc9c;">
+<div style="font-size: 1.5rem; margin-bottom: 0.25rem;">
+🗓️
+</div>
+<h2 style="color: #18bc9c; font-weight: 800; margin: 0; font-size: 2.2rem;" class="anchored">
 1962
 </h2>
-<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Debut Year</span></p>
+<p><span style="color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Debut Year</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="card p-3 bg-light border-0 shadow-sm">
-<h2 style="color: #3498db; font-weight: bold; margin: 0;" class="anchored">
+<div class="stat-card" style="border-top: 4px solid #3498db;">
+<div style="font-size: 1.5rem; margin-bottom: 0.25rem;">
+⭐
+</div>
+<h2 style="color: #3498db; font-weight: 800; margin: 0; font-size: 2.2rem;" class="anchored">
 11
 </h2>
-<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Peak Annual Births</span></p>
+<p><span style="color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Peak Annual Births</span></p>
 </div>
 </div>
 <div class="g-col-12 g-col-sm-6 g-col-md-3">
-<div class="card p-3 bg-light border-0 shadow-sm">
-<h2 style="color: #e74c3c; font-weight: bold; margin: 0;" class="anchored">
+<div class="stat-card" style="border-top: 4px solid #e74c3c;">
+<div style="font-size: 1.5rem; margin-bottom: 0.25rem;">
+🌸
+</div>
+<h2 style="color: #e74c3c; font-weight: 800; margin: 0; font-size: 2.2rem;" class="anchored">
 100%
 </h2>
-<p><span style="color: #7b8a8b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Female</span></p>
+<p><span style="color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Female Registrations</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note" style="border-left-color: #18bc9c; margin-bottom: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Demographic Insight:</strong> In the entire Social Security Administration database (1880–2025), <strong>Celise</strong> has been given exclusively to female babies (207 recorded, 0 males). The name experienced a modern high in the 2020s, tying its record of 11 births per year in both 2024 and 2025.</p>
 </div>
 </div>
 </div>
 <section id="visual-demographics" class="level2">
-<h2 class="anchored" data-anchor-id="visual-demographics">Visual Demographics</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">📈 Timeline (1962–2025)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🏛️ Population Pyramid</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<h2 class="anchored" data-anchor-id="visual-demographics">📊 Visual Demographics</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-6">
+<div class="dashboard-card">
+<h4 style="margin-top: 0; color: #2c3e50; font-weight: 700;" class="anchored">
+📈 Annual Births Timeline
+</h4>
+<p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1rem;">
+Tracking recorded births of Celise between 1962 and 2025.
+</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-1c5b84c3f010bdb28cc0" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-1c5b84c3f010bdb28cc0">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: Female","year: 1972<br />births:  6<br />Sex: Female","year: 1984<br />births:  6<br />Sex: Female","year: 1985<br />births:  6<br />Sex: Female","year: 1988<br />births:  7<br />Sex: Female","year: 1991<br />births:  6<br />Sex: Female","year: 1995<br />births:  5<br />Sex: Female","year: 1997<br />births:  5<br />Sex: Female","year: 1999<br />births:  9<br />Sex: Female","year: 2001<br />births:  7<br />Sex: Female","year: 2002<br />births:  7<br />Sex: Female","year: 2005<br />births: 10<br />Sex: Female","year: 2006<br />births:  8<br />Sex: Female","year: 2007<br />births:  9<br />Sex: Female","year: 2008<br />births:  8<br />Sex: Female","year: 2009<br />births:  8<br />Sex: Female","year: 2010<br />births:  8<br />Sex: Female","year: 2011<br />births:  5<br />Sex: Female","year: 2012<br />births: 11<br />Sex: Female","year: 2014<br />births:  8<br />Sex: Female","year: 2016<br />births:  7<br />Sex: Female","year: 2018<br />births:  6<br />Sex: Female","year: 2019<br />births:  5<br />Sex: Female","year: 2020<br />births:  6<br />Sex: Female","year: 2021<br />births:  6<br />Sex: Female","year: 2023<br />births: 10<br />Sex: Female","year: 2024<br />births: 11<br />Sex: Female","year: 2025<br />births: 11<br />Sex: Female"],"type":"scatter","mode":"lines+markers","line":{"width":3.0236220472440949,"color":"rgba(231,76,60,1)","dash":"solid"},"hoveron":"points","name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,76,60,1)"}},"frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Registered Births of Celise Over Time (1962–2025)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"ff4f178404de":{"x":{},"y":{},"colour":{},"type":"scatter"},"ff4f7df23f05":{"x":{},"y":{},"colour":{}}},"cur_data":"ff4f178404de","visdat":{"ff4f178404de":["function (y) ","x"],"ff4f7df23f05":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-c9f92a62f06120df971c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-c9f92a62f06120df971c">{"x":{"data":[{"x":[1962,1972,1984,1985,1988,1991,1995,1997,1999,2001,2002,2005,2006,2007,2008,2009,2010,2011,2012,2014,2016,2018,2019,2020,2021,2023,2024,2025],"y":[6,6,6,6,7,6,5,5,9,7,7,10,8,9,8,8,8,5,11,8,7,6,5,6,6,10,11,11],"text":["year: 1962<br />births:  6<br />Sex: Female","year: 1972<br />births:  6<br />Sex: Female","year: 1984<br />births:  6<br />Sex: Female","year: 1985<br />births:  6<br />Sex: Female","year: 1988<br />births:  7<br />Sex: Female","year: 1991<br />births:  6<br />Sex: Female","year: 1995<br />births:  5<br />Sex: Female","year: 1997<br />births:  5<br />Sex: Female","year: 1999<br />births:  9<br />Sex: Female","year: 2001<br />births:  7<br />Sex: Female","year: 2002<br />births:  7<br />Sex: Female","year: 2005<br />births: 10<br />Sex: Female","year: 2006<br />births:  8<br />Sex: Female","year: 2007<br />births:  9<br />Sex: Female","year: 2008<br />births:  8<br />Sex: Female","year: 2009<br />births:  8<br />Sex: Female","year: 2010<br />births:  8<br />Sex: Female","year: 2011<br />births:  5<br />Sex: Female","year: 2012<br />births: 11<br />Sex: Female","year: 2014<br />births:  8<br />Sex: Female","year: 2016<br />births:  7<br />Sex: Female","year: 2018<br />births:  6<br />Sex: Female","year: 2019<br />births:  5<br />Sex: Female","year: 2020<br />births:  6<br />Sex: Female","year: 2021<br />births:  6<br />Sex: Female","year: 2023<br />births: 10<br />Sex: Female","year: 2024<br />births: 11<br />Sex: Female","year: 2025<br />births: 11<br />Sex: Female"],"type":"scatter","mode":"lines+markers","line":{"width":3.0236220472440949,"color":"rgba(231,76,60,1)","dash":"solid"},"hoveron":"points","name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,76,60,1)"}},"frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":37.260273972602747},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Registered Births of Celise Over Time (1962–2025)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1958.8499999999999,2028.1500000000001],"tickmode":"array","ticktext":["1960","1980","2000","2020"],"tickvals":[1960,1980,2000,2020],"categoryorder":"array","categoryarray":["1960","1980","2000","2020"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.60000000000000009,12.6],"tickmode":"array","ticktext":["0","2","4","6","8","10","12"],"tickvals":[0,2,3.9999999999999996,6,8,10,12],"categoryorder":"array","categoryarray":["0","2","4","6","8","10","12"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Annual Births","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"10d7b162adcab":{"x":{},"y":{},"colour":{},"type":"scatter"},"10d7b61404e5b":{"x":{},"y":{},"colour":{}}},"cur_data":"10d7b162adcab","visdat":{"10d7b162adcab":["function (y) ","x"],"10d7b61404e5b":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<p>The timeline tracks registered births of Celise since 1962, consistently hovering between 5 and 11 births per year.</p>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+</div>
+<div class="g-col-12 g-col-lg-6">
+<div class="dashboard-card">
+<h4 style="margin-top: 0; color: #2c3e50; font-weight: 700;" class="anchored">
+🏛️ Living Population Pyramid
+</h4>
+<p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1rem;">
+Estimated 2026 age brackets (57% under age 20).
+</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-d5d951d350809a538b03" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-d5d951d350809a538b03">{"x":{"data":[{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[55,64,46,18,12,6,6,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total: 55<br />Sex: Female","age_group: 10–19<br />plot_total: 64<br />Sex: Female","age_group: 20–29<br />plot_total: 46<br />Sex: Female","age_group: 30–39<br />plot_total: 18<br />Sex: Female","age_group: 40–49<br />plot_total: 12<br />Sex: Female","age_group: 50–59<br />plot_total:  6<br />Sex: Female","age_group: 60–69<br />plot_total:  6<br />Sex: Female","age_group: 70+<br />plot_total:  0<br />Sex: Female"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[0,0,0,0,0,0,0,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total:  0<br />Sex: Male","age_group: 10–19<br />plot_total:  0<br />Sex: Male","age_group: 20–29<br />plot_total:  0<br />Sex: Male","age_group: 30–39<br />plot_total:  0<br />Sex: Male","age_group: 40–49<br />plot_total:  0<br />Sex: Male","age_group: 50–59<br />plot_total:  0<br />Sex: Male","age_group: 60–69<br />plot_total:  0<br />Sex: Male","age_group: 70+<br />plot_total:  0<br />Sex: Male"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(52,152,219,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Male","legendgroup":"Male","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Population Pyramid for Celise (Estimated 2026 Ages)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"ff4f40ebc88f":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"ff4f40ebc88f","visdat":{"ff4f40ebc88f":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-14b6c7b6712107ad1609" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-14b6c7b6712107ad1609">{"x":{"data":[{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[55,64,46,18,12,6,6,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total: 55<br />Sex: Female","age_group: 10–19<br />plot_total: 64<br />Sex: Female","age_group: 20–29<br />plot_total: 46<br />Sex: Female","age_group: 30–39<br />plot_total: 18<br />Sex: Female","age_group: 40–49<br />plot_total: 12<br />Sex: Female","age_group: 50–59<br />plot_total:  6<br />Sex: Female","age_group: 60–69<br />plot_total:  6<br />Sex: Female","age_group: 70+<br />plot_total:  0<br />Sex: Female"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(231,76,60,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Female","legendgroup":"Female","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"h","width":[0.70000000000000007,0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929,0.69999999999999929,0.69999999999999929],"base":[0,0,0,0,0,0,0,0],"x":[0,0,0,0,0,0,0,0],"y":[1,2,3,4,5,6,7,8],"text":["age_group: 0–9<br />plot_total:  0<br />Sex: Male","age_group: 10–19<br />plot_total:  0<br />Sex: Male","age_group: 20–29<br />plot_total:  0<br />Sex: Male","age_group: 30–39<br />plot_total:  0<br />Sex: Male","age_group: 40–49<br />plot_total:  0<br />Sex: Male","age_group: 50–59<br />plot_total:  0<br />Sex: Male","age_group: 60–69<br />plot_total:  0<br />Sex: Male","age_group: 70+<br />plot_total:  0<br />Sex: Male"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(52,152,219,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Male","legendgroup":"Male","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":54.794520547945211},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Population Pyramid for Celise (Estimated 2026 Ages)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-77,77],"tickmode":"array","ticktext":["60","40","20","0","20","40","60"],"tickvals":[-60,-40,-20,0,20,40,60],"categoryorder":"array","categoryarray":["60","40","20","0","20","40","60"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Number of People","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["0–9","10–19","20–29","30–39","40–49","50–59","60–69","70+"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Age Bracket (Years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Sex","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"10d7b14027a7a":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"10d7b14027a7a","visdat":{"10d7b14027a7a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<p>The population pyramid displays estimated age groups for Celises today: over half (119 out of 207) are under age 20, and 100% are female.</p>
 </div>
 </div>
 </div>
 </section>
 <section id="historical-records-explorer" class="level2">
 <h2 class="anchored" data-anchor-id="historical-records-explorer">🔍 Historical Records Explorer</h2>
-<p>Filter, sort, and export every recorded year for the name Celise. Use the search inputs and slider filters at the top of each column to explore specific decades or age groups!</p>
+<div class="dashboard-card">
+<p style="color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem;">
+Filter, sort, and export every recorded year for the name Celise. Use the search inputs and slider filters at the top of each column to explore specific decades or age groups!
+</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-f65d9b2ffe5822656ecb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-f65d9b2ffe5822656ecb">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1962\" data-max=\"2025\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"64\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"5\" data-max=\"11\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"2.84\" data-max=\"6.84\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["2020s","2020s","2020s","2020s","2020s","2010s","2010s","2010s","2010s","2010s","2010s","2010s","2000s","2000s","2000s","2000s","2000s","2000s","2000s","1990s","1990s","1990s","1990s","1980s","1980s","1980s","1970s","1960s"],[1,2,3,5,6,7,8,10,12,14,15,16,17,18,19,20,21,24,25,27,29,31,35,38,41,42,54,64],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6],["5.3%","5.3%","4.8%","2.9%","2.9%","2.4%","2.9%","3.4%","3.9%","5.3%","2.4%","3.9%","3.9%","3.9%","4.3%","3.9%","4.8%","3.4%","3.4%","4.3%","2.4%","2.4%","2.9%","3.4%","2.9%","2.9%","2.9%","2.9%"],[6.84,6.79,6.23,3.66,3.71,2.98,3.53,3.95,4.48,6.25,2.84,4.5,4.35,4.23,4.68,4.21,5.41,3.9,3.89,5.07,2.87,2.84,3.2,3.93,3.49,3.56,3.94,3.05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Decade<\/th>\n      <th>Age Today<\/th>\n      <th>Count<\/th>\n      <th>% of All Celises<\/th>\n      <th>Per Million Female Births<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"Bfrtip","buttons":["copy","csv","excel"],"columnDefs":[{"className":"dt-right","targets":[0,2,3,5]},{"name":"Year","targets":0},{"name":"Decade","targets":1},{"name":"Age Today","targets":2},{"name":"Count","targets":3},{"name":"% of All Celises","targets":4},{"name":"Per Million Female Births","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-61a62c8d95985023a737" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-61a62c8d95985023a737">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1962\" data-max=\"2025\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"64\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"5\" data-max=\"11\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"2.84\" data-max=\"6.84\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[2025,2024,2023,2021,2020,2019,2018,2016,2014,2012,2011,2010,2009,2008,2007,2006,2005,2002,2001,1999,1997,1995,1991,1988,1985,1984,1972,1962],["2020s","2020s","2020s","2020s","2020s","2010s","2010s","2010s","2010s","2010s","2010s","2010s","2000s","2000s","2000s","2000s","2000s","2000s","2000s","1990s","1990s","1990s","1990s","1980s","1980s","1980s","1970s","1960s"],[1,2,3,5,6,7,8,10,12,14,15,16,17,18,19,20,21,24,25,27,29,31,35,38,41,42,54,64],[11,11,10,6,6,5,6,7,8,11,5,8,8,8,9,8,10,7,7,9,5,5,6,7,6,6,6,6],["5.3%","5.3%","4.8%","2.9%","2.9%","2.4%","2.9%","3.4%","3.9%","5.3%","2.4%","3.9%","3.9%","3.9%","4.3%","3.9%","4.8%","3.4%","3.4%","4.3%","2.4%","2.4%","2.9%","3.4%","2.9%","2.9%","2.9%","2.9%"],[6.84,6.79,6.23,3.66,3.71,2.98,3.53,3.95,4.48,6.25,2.84,4.5,4.35,4.23,4.68,4.21,5.41,3.9,3.89,5.07,2.87,2.84,3.2,3.93,3.49,3.56,3.94,3.05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Decade<\/th>\n      <th>Age Today<\/th>\n      <th>Count<\/th>\n      <th>% of All Celises<\/th>\n      <th>Per Million Female Births<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"Bfrtip","buttons":["copy","csv","excel"],"columnDefs":[{"className":"dt-right","targets":[0,2,3,5]},{"name":"Year","targets":0},{"name":"Decade","targets":1},{"name":"Age Today","targets":2},{"name":"Count","targets":3},{"name":"% of All Celises","targets":4},{"name":"Per Million Female Births","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 </section>
 <section id="name-detective-the-celise-quiz" class="level2">
 <h2 class="anchored" data-anchor-id="name-detective-the-celise-quiz">🎮 Name Detective: The Celise Quiz</h2>
-<p>Test what you learned from the data in this interactive mini-game!</p>
-<div id="game-container" style="max-width: 550px; margin: 2rem auto; padding: 1.5rem; border: 2px solid #2c3e50; border-radius: 12px; background: #f8f9fa; box-shadow: 0 4px 10px rgba(0,0,0,0.08); font-family: inherit;">
+<div class="dashboard-card" style="max-width: 620px; margin: 2rem auto; border-top: 4px solid #18bc9c;">
+
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-    <h3 style="margin: 0; color: #2c3e50;" class="anchored">Name Detective Quiz</h3>
-    <span id="score-display" style="font-weight: bold; background: #2c3e50; color: white; padding: 4px 12px; border-radius: 20px;">Score: 0 / 10</span>
+    <h3 style="margin: 0; color: #2c3e50; font-weight: 800;" class="anchored">Name Detective Quiz</h3>
+    <span id="score-display" style="font-weight: bold; background: #2c3e50; color: white; padding: 4px 14px; border-radius: 20px; font-size: 0.9rem;">Score: 0 / 10</span>
   </div>
-  <p id="question-text" style="font-size: 1.15rem; font-weight: 600; color: #333; margin-bottom: 1rem;"></p>
-  <div id="options-container" style="display: grid; gap: 0.5rem; margin-bottom: 1rem;"></div>
-  <div id="feedback" style="min-height: 28px; font-weight: 500; font-size: 0.95rem; margin-bottom: 1rem;"></div>
-  <button id="next-btn" style="display: none; width: 100%; padding: 10px; background: #18bc9c; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Next Question ➔</button>
+
+  <div style="background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 1.25rem;">
+    <div id="quiz-progress" style="background: #18bc9c; height: 100%; width: 10%; transition: width 0.3s ease;"></div>
+  </div>
+
+  <p id="question-text" style="font-size: 1.15rem; font-weight: 600; color: #2c3e50; margin-bottom: 1.25rem;"></p>
+  <div id="options-container" style="display: grid; gap: 0.6rem; margin-bottom: 1.25rem;"></div>
+  <div id="feedback" style="min-height: 32px; font-weight: 500; font-size: 0.95rem; margin-bottom: 1.25rem;"></div>
+  <button id="next-btn" style="display: none; width: 100%; padding: 12px; background: #18bc9c; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s;">Next Question ➔</button>
+
 </div>
 
 <script>
@@ -268,6 +336,7 @@ ul.task-list li input[type="checkbox"] {
   const fb = document.getElementById("feedback");
   const nextBtn = document.getElementById("next-btn");
   const scoreDisp = document.getElementById("score-display");
+  const progBar = document.getElementById("quiz-progress");
 
   function loadQuestion() {
     fb.innerHTML = "";
@@ -275,6 +344,7 @@ ul.task-list li input[type="checkbox"] {
     const item = quiz[current];
     qText.textContent = `Question ${current + 1} of ${quiz.length}: ${item.q}`;
     optContainer.innerHTML = "";
+    if (progBar) progBar.style.width = ((current + 1) / quiz.length) * 100 + "%";
 
     item.options.forEach((opt, idx) => {
       const btn = document.createElement("button");
@@ -329,6 +399,7 @@ ul.task-list li input[type="checkbox"] {
     qText.textContent = "Quiz Complete!";
     optContainer.innerHTML = "";
     nextBtn.style.display = "none";
+    if (progBar) progBar.style.width = "100%";
     let message = "";
     if (score === quiz.length) {
       message = "🏆 Perfect Score! You're an official Celise demographic expert!";
